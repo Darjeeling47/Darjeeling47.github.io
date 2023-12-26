@@ -1,0 +1,27 @@
+[
+  {
+    "title" : "Home",
+    "path" : "",
+    "icon" : "bi bi-house-fill me-1"
+  },
+  {
+    "title" : "Award",
+    "path" : "award",
+    "icon" : "bi bi-award-fill me-1"
+  },
+  {
+    "title" : "Project",
+    "path" : "project",
+    "icon" : "bi bi-kanban-fill me-1"
+  },
+  {
+    "title" : "Activities",
+    "path" : "activities",
+    "icon" : "bi bi-balloon-fill me-1"
+  },
+  {
+    "title" : "Experience",
+    "path" : "experience",
+    "icon" : "bi bi-building-fill me-1"
+  }
+]

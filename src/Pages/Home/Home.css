@@ -1,0 +1,60 @@
+.home-title img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.home-title h1 {
+  font-size: 9.5rem;
+}
+
+@media screen and (min-width: 1400px){
+  .home-title img {
+    width: 55%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .home-title img {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .home-title h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .home-title img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .home-title h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
+/* contact */
+.contact p {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* about me */
+.about-me .about-me-topic {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me .about-me-description {
+  font-size: 1.2rem;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
