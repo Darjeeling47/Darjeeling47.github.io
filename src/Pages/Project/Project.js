@@ -117,8 +117,7 @@ function ProjectModal ({ modalData, modalShow, setModalShow}) {
 }
 
 function ModalButton ({ link }) {
-
-  if(link != '#')
+  if(link !== '#')
     return(
       <Button href={link} target='_blank' variant='outline-primary' className='pt-0-6'>Visit<i class="bi bi-arrow-right-circle-fill ms-2"></i></Button>
     );
