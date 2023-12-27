@@ -42,16 +42,17 @@ function ActivitiesList () {
                 <Col>
                   <Container fluid>
                     <Row>
-                      <Col>
+                      <Col className="px-0">
                         <h1>{data.topic}</h1>
                       </Col>
-                      <Col lg={2} className="text-end">
+                      <Col lg={2} className="text-end px-0">
                         <Badge bg={data.color1} className="pt-0-5">{data.badge}</Badge>
                       </Col>
                     </Row>
                   </Container>
                   <hr className="my-0-5"/>
-                  <p>{data.detail}</p>
+                  <p className="mb-1">{"Year : " + data.year}</p>
+                  <p className="mt-0-5">{data.detail}</p>
                 </Col>
                 <Col>
                   <Container>

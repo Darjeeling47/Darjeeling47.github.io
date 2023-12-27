@@ -18,5 +18,39 @@
       "Paragraph2" : "ทั้งยังมีประสบการณ์ในการพัฒนาเว็บไซต์แบบ full stack โดยบางโปรเจ็คก็ได้ชนะการแข่งขัน ซึ่งตอนนี้อยู่ในช่วงการพัฒนาเพื่อนำมาใช้จริง และมีโปรเจ็คบางตัวก็ได้มีการนำไปใช้จริงแล้วด้วย",
       "Paragraph3" : "ผมมีประสบการณ์การทำงานร่วมกับผู้อื่นทั้งในระดับโรงเรียน และระดับบริษัท ซึ่งมีหลายตำแหน่งเช่น ผู้ดูแลโครงการ เป็นต้น"
     } 
+  },
+
+  "Menu" : {
+    "Topic" : "Menu",
+    "Description" : [
+      {
+        "Topic" : "Award",
+        "Icon" : "bi bi-award-fill me-1",
+        "Path" : "/award",
+        "Color" : "color-txt-orange-500",
+        "Varint" : "color-bg-orange-500 color-txt-orange-900 color-oline-orange-500"
+      },
+      {
+        "Topic" : "Project",
+        "Icon" : "bi bi-kanban-fill me-1",
+        "Path" : "/project",
+        "Color" : "color-txt-blue-500",
+        "Varint" : "color-bg-blue-500 color-txt-blue-900 color-oline-blue-500"
+      },
+      {
+        "Topic" : "Activities",
+        "Icon" : "bi bi-balloon-fill me-1",
+        "Path" : "/activities",
+        "Color" : "color-txt-emerald-500",
+        "Varint" : "color-bg-emerald-500 color-txt-emerald-800 color-oline-emerald-500"
+      },
+      {
+        "Topic" : "Experience",
+        "Icon" : "bi bi-building-fill me-1",
+        "Path" : "/experience",
+        "Color" : "color-txt-amber-500",
+        "Varint" : "color-bg-amber-500 color-txt-amber-800 color-oline-amber-500"
+      }
+    ]
   }
 }

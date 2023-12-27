@@ -1,0 +1,26 @@
+{
+  "topic" : "Experience",
+  "description" : [
+    {
+      "topic" : "Relations & Marketing Expert",
+      "company" : "OpenMirai",
+      "year" : "02/2566 - Current",
+      "detail" : "ทำงานในฝ่ายการตลาด และติดต่อสัมพันธ์กับลูกค้า ซึ่งก็ได้ทำการตลาดผ่าน facebook โดยมียอดติดตามถึง 1.2 พันคน",
+      "link" : "https://web.facebook.com/openmirai"
+    },
+    {
+      "topic" : "ครูสอนพิเศษคอมพิวเตอร์ และคณิตศาสตร์",
+      "company" : "#include tutor.s",
+      "year" : "12/2565 - Current",
+      "detail" : "สอนพิเศษในภาษา C/C++ และคณิตศาสตร์มากว่า 1 ปี โดยที่เน้นกระบวนการคิดให้น้อง ๆ",
+      "link" : "https://web.facebook.com/profile.php?id=61553974435444"
+    },
+    {
+      "topic" : "ที่ปรึกษาสภานักเรียน",
+      "company" : "รร. วิทยาศาสตร์จุฬาภรณราชวิทยาลัย ชลบุรี",
+      "year" : "08/2565 - 02/2566",
+      "detail" : "เป็นที่ปรึกษาสภานักเรียนที่ช่วยแนะนำแนวทาง และตรวจสอบให้การดำเนินการเรียบร้อย",
+      "link" : "#"
+    }
+  ]
+}

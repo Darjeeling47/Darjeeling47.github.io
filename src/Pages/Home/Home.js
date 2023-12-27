@@ -1,9 +1,10 @@
 //css
 import "./Home.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Card, CardHeader, Button } from "react-bootstrap";
 
 //json
 import Data from "./Home.json";
+import { useNavigate } from "react-router-dom";
 
 export default function main () {
   return(
@@ -11,6 +12,7 @@ export default function main () {
       <Title />
       <Contact />
       <AboutMe />
+      <Menu />
     </>
   );
 }
@@ -93,3 +95,46 @@ function AboutMe() {
     </Container>
   );
 } 
+
+function Menu () {
+
+  let data = Data.Menu.Topic;
+
+  return(
+    <Container className="mt-4-0">
+      <h1>{data}</h1>
+      <br></br>
+      <Row>
+        <LoopMenu />
+      </Row>
+    </Container>
+  );
+}
+
+function LoopMenu () {
+
+  let data = Data.Menu.Description;
+  const navigate = useNavigate();
+
+  return data.map((menu) => {
+
+    const handleClick = navigate(menu.path)
+
+    return(
+      <Col lg={3} md={6}>
+        <Card className="home-card mb-3">
+          <Card.Body>
+            <Container fluid>
+              <Row>
+                <Col className="mb-3">
+                  <h1 className="font mb-0"><i className={menu.Icon + " " + menu.Color}></i>{menu.Topic}</h1>
+                </Col>
+                <Button href={menu.Path} className={menu.Varint}>Visit</Button>
+              </Row>
+            </Container>
+          </Card.Body>
+        </Card>
+      </Col>
+    );
+  });
+}
