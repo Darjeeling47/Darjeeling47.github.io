@@ -1,5 +1,5 @@
 //css
-import "./Experience.css";
+import "./Activities/Activities.css";
 import {
   Container,
   Row,
@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 
 //data
-import Data from "./Experience.json";
+import Data from "./Activities/Activities.json";
 
 export default function test() {
   return (
@@ -29,11 +29,11 @@ function Topic() {
     <Container className="mt-5 project-topic">
       <Row>
         <h1>
-          <i class="bi bi-building-fill color-txt-amber-500 me-2"></i>
+          <i class="bi bi-balloon-fill color-txt-emerald-500 me-2"></i>
           {topic}
         </h1>
       </Row>
-      <div className="color-line color-bg-amber-500"></div>
+      <div className="color-line color-bg-emerald-500"></div>
     </Container>
   );
 }
@@ -44,7 +44,7 @@ function ActivitiesList() {
   return act.map((data) => {
     return (
       <Container className="mt-1-6">
-        <Card className="experience-card">
+        <Card className="activities-card">
           <Card.Body>
             <Container>
               <Row>
@@ -54,21 +54,24 @@ function ActivitiesList() {
                       <Col className="px-0">
                         <h1>{data.topic}</h1>
                       </Col>
-                      <Col className="text-end px-0">
-                        <h2>
-                          <i class="bi bi-dot color-txt-amber-500"></i>
-                          {data.company}
-                        </h2>
+                      <Col lg={2} className="text-end px-0">
+                        <Badge bg={data.color1} className="pt-0-5">
+                          {data.badge}
+                        </Badge>
                       </Col>
                     </Row>
                   </Container>
                   <hr className="my-0-5" />
-                  <p className="mb-0-5">{"Year : " + data.year}</p>
-                  <p>{data.detail}</p>
+                  <p className="mb-1">{"Year : " + data.year}</p>
+                  <p className="mt-0-5">{data.detail}</p>
                 </Col>
-              </Row>
-              <Row>
-                <LinkButton link={data.link} />
+                <Col>
+                  <Container>
+                    <Row>
+                      <ImageGen image={data.image} />
+                    </Row>
+                  </Container>
+                </Col>
               </Row>
             </Container>
           </Card.Body>
@@ -78,11 +81,15 @@ function ActivitiesList() {
   });
 }
 
-function LinkButton({ link }) {
-  if (link !== "#")
+function ImageGen({ image }) {
+  return image.map((imageData) => {
     return (
-      <Button href={link} variant="warning" className="color-txt-yellow-900">
-        <i class="bi bi-link me-1"></i>Visit
-      </Button>
+      <Col lg>
+        <img
+          src={"images/Activities/" + imageData}
+          className="rounded mb-1"
+        ></img>
+      </Col>
     );
+  });
 }
