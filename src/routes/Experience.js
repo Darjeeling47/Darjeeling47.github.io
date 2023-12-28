@@ -1,12 +1,20 @@
 //css
-import "./Experience.css";
-import { Container, Row, Col, Card, Button, Modal, Badge } from "react-bootstrap";
+import "./Experience/Experience.css";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  Modal,
+  Badge,
+} from "react-bootstrap";
 
 //data
-import Data from "./Experience.json";
+import Data from "./Experience/Experience.json";
 
-export default function test () {
-  return(
+export default function test() {
+  return (
     <>
       <Topic />
       <ActivitiesList />
@@ -14,26 +22,27 @@ export default function test () {
   );
 }
 
-function Topic () {
-
+function Topic() {
   let topic = Data.topic;
 
-  return(
+  return (
     <Container className="mt-5 project-topic">
       <Row>
-        <h1><i class="bi bi-building-fill color-txt-amber-500 me-2"></i>{topic}</h1>
+        <h1>
+          <i class="bi bi-building-fill color-txt-amber-500 me-2"></i>
+          {topic}
+        </h1>
       </Row>
       <div className="color-line color-bg-amber-500"></div>
     </Container>
   );
 }
 
-function ActivitiesList () {
-
+function ActivitiesList() {
   let act = Data.description;
 
   return act.map((data) => {
-    return(
+    return (
       <Container className="mt-1-6">
         <Card className="experience-card">
           <Card.Body>
@@ -46,11 +55,14 @@ function ActivitiesList () {
                         <h1>{data.topic}</h1>
                       </Col>
                       <Col className="text-end px-0">
-                        <h2><i class="bi bi-dot color-txt-amber-500"></i>{data.company}</h2>
+                        <h2>
+                          <i class="bi bi-dot color-txt-amber-500"></i>
+                          {data.company}
+                        </h2>
                       </Col>
                     </Row>
                   </Container>
-                  <hr className="my-0-5"/>
+                  <hr className="my-0-5" />
                   <p className="mb-0-5">{"Year : " + data.year}</p>
                   <p>{data.detail}</p>
                 </Col>
@@ -66,9 +78,11 @@ function ActivitiesList () {
   });
 }
 
-function LinkButton ({ link }) {
-  if(link !== '#')
+function LinkButton({ link }) {
+  if (link !== "#")
     return (
-      <Button href={link} variant="warning" className="color-txt-yellow-900"><i class="bi bi-link me-1"></i>Visit</Button>
+      <Button href={link} variant="warning" className="color-txt-yellow-900">
+        <i class="bi bi-link me-1"></i>Visit
+      </Button>
     );
 }

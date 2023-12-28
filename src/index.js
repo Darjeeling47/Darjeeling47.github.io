@@ -13,7 +13,7 @@ import Home from "./routes/Home/Home";
 import Award from "./routes/Award/Award";
 import Project from "./routes/Project/Project";
 import Activities from "./routes/Activities/Activities";
-import Experience from "./routes/Experience/Experience";
+import Experience from "./routes/Experience";
 
 const router = createBrowserRouter(
   [
