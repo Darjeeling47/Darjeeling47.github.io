@@ -130,7 +130,7 @@ function LoopMenu() {
                     {menu.Topic}
                   </h1>
                 </Col>
-                <Button href={"/profile/#" + menu.Path} className={menu.Varint}>
+                <Button href={"/profile" + menu.Path} className={menu.Varint}>
                   Visit
                 </Button>
               </Row>

@@ -39,7 +39,7 @@ function NavigationMenu() {
   return Data.map((page) => {
     return (
       <Nav.Link
-        href={"/profile/#/" + page.path}
+        href={"/profile/" + page.path}
         key={page.path}
         className="navigation-bar-menu me-1"
       >
