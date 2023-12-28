@@ -9,11 +9,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 //path
 import Root from "./Root";
-import Home from "./routes/Home/Home";
-import Award from "./routes/Award/Award";
-import Project from "./routes/Project/Project";
-import Activities from "./routes/Activities/Activities";
-import Experience from "./routes/Experience";
+import Home from "./Pages/Home/Home";
+import Award from "./Pages/Award/Award";
+import Project from "./Pages/Project/Project";
+import Activities from "./Pages/Activities/Activities";
+import Experience from "./Pages/Experience/Experience";
 
 const router = createBrowserRouter(
   [

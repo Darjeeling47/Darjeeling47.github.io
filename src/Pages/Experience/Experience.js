@@ -1,5 +1,5 @@
 //css
-import "./Experience/Experience.css";
+import "./Experience.css";
 import {
   Container,
   Row,
@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 
 //data
-import Data from "./Experience/Experience.json";
+import Data from "./Experience.json";
 
 export default function test() {
   return (
