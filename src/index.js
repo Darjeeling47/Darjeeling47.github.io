@@ -15,39 +15,34 @@ import Project from "./routes/Project";
 import Activities from "./routes/Activities";
 import Experience from "./routes/Experience";
 
-const router = createHashRouter(
-  [
-    {
-      path: "/",
-      element: <Root />,
-      children: [
-        {
-          path: "",
-          element: <Home />,
-        },
-        {
-          path: "award",
-          element: <Award />,
-        },
-        {
-          path: "project",
-          element: <Project />,
-        },
-        {
-          path: "activities",
-          element: <Activities />,
-        },
-        {
-          path: "experience",
-          element: <Experience />,
-        },
-      ],
-    },
-  ],
+const router = createHashRouter([
   {
-    basename: "/profile",
-  }
-);
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "award",
+        element: <Award />,
+      },
+      {
+        path: "project",
+        element: <Project />,
+      },
+      {
+        path: "activities",
+        element: <Activities />,
+      },
+      {
+        path: "experience",
+        element: <Experience />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

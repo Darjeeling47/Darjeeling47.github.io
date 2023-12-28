@@ -116,7 +116,7 @@ function LoopMenu() {
   const navigate = useNavigate();
 
   return data.map((menu) => {
-    const handleClick = navigate(menu.path);
+    // const handleClick = navigate(menu.path);
 
     return (
       <Col lg={3} md={6}>
@@ -130,7 +130,7 @@ function LoopMenu() {
                     {menu.Topic}
                   </h1>
                 </Col>
-                <Button href={menu.Path} className={menu.Varint}>
+                <Button href={"/profile/#" + menu.Path} className={menu.Varint}>
                   Visit
                 </Button>
               </Row>
