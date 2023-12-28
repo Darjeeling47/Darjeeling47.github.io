@@ -9,40 +9,45 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 //path
 import Root from "./Root";
-import Home from "./Pages/Home/Home";
-import Award from "./Pages/Award/Award";
-import Project from "./Pages/Project/Project";
-import Activities from "./Pages/Activities/Activities";
-import Experience from "./Pages/Experience/Experience";
+import Home from "./routes/Home/Home";
+import Award from "./routes/Award/Award";
+import Project from "./routes/Project/Project";
+import Activities from "./routes/Activities/Activities";
+import Experience from "./routes/Experience/Experience";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+        },
+        {
+          path: "award",
+          element: <Award />,
+        },
+        {
+          path: "project",
+          element: <Project />,
+        },
+        {
+          path: "activities",
+          element: <Activities />,
+        },
+        {
+          path: "experience",
+          element: <Experience />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/profile",
-    element: <Root />,
-    children: [
-      {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "/profile/award",
-        element: <Award />,
-      },
-      {
-        path: "/profile/project",
-        element: <Project />,
-      },
-      {
-        path: "/profile/activities",
-        element: <Activities />,
-      },
-      {
-        path: "/profile/experience",
-        element: <Experience />,
-      },
-    ],
-  },
-]);
+    basename: "/profile",
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
