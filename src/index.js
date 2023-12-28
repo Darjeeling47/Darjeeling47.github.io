@@ -1,50 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 //css
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //path
-import Root from './Root';
-import Home from './Pages/Home/Home'
-import Award from './Pages/Award/Award'
-import Project from './Pages/Project/Project'
-import Activities from './Pages/Activities/Activities'
-import Experience from './Pages/Experience/Experience'
+import Root from "./Root";
+import Home from "./Pages/Home/Home";
+import Award from "./Pages/Award/Award";
+import Project from "./Pages/Project/Project";
+import Activities from "./Pages/Activities/Activities";
+import Experience from "./Pages/Experience/Experience";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/profile",
     element: <Root />,
     children: [
       {
-        path: '',
-        element: <Home />
+        path: "",
+        element: <Home />,
       },
       {
-        path: 'award',
-        element: <Award />
+        path: "award",
+        element: <Award />,
       },
       {
-        path: 'project',
-        element: <Project />
+        path: "project",
+        element: <Project />,
       },
       {
-        path: 'activities',
-        element: <Activities />
+        path: "activities",
+        element: <Activities />,
       },
       {
-        path: 'experience',
-        element: <Experience />
+        path: "experience",
+        element: <Experience />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
